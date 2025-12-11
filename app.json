@@ -22,7 +22,8 @@
       },
       "package": "com.ordensservico.app"
     },
-    "plugins": []
+    "plugins": [
+      "expo-sqlite"
+    ]
   }
 }
-

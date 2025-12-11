@@ -7,7 +7,7 @@ Aplicativo React Native desenvolvido com Expo para cadastro e gerenciamento de O
 - **React Native** com **Expo SDK 51**
 - **TypeScript**
 - **React Navigation** (Stack Navigator)
-- **AsyncStorage** para persistência local
+- **SQLite** (expo-sqlite) para banco de dados local
 - **React Native Screens** e **Safe Area Context**
 
 ## 📋 Funcionalidades
@@ -18,7 +18,7 @@ Aplicativo React Native desenvolvido com Expo para cadastro e gerenciamento de O
 - ✅ **Edição de ordens** - Atualize informações existentes
 - ✅ **Botão Voltar** - Saia sem salvar alterações
 - ✅ **Indicador visual de status** - Finalizado/Pendente
-- ✅ **Persistência local** - Dados salvos com AsyncStorage
+- ✅ **Banco de dados SQLite** - Persistência local robusta e eficiente
 - ✅ **Interface moderna** - Design limpo e profissional
 
 ## 🛠️ Instalação
@@ -133,6 +133,8 @@ Para executar:
 │   │   └── CadastroScreen.tsx  # Formulário de cadastro/edição
 │   ├── services/
 │   │   └── ordemServicoService.ts  # Serviço de persistência
+│   ├── database/
+│   │   └── database.ts        # Configuração do banco SQLite
 │   └── types/
 │       └── OrdemServico.ts    # Tipos TypeScript
 └── README.md                  # Este arquivo
@@ -152,18 +154,40 @@ Cada Ordem de Serviço contém:
 - `valor_servico`: Valor do serviço (número)
 - `finalizado`: Status (true/false)
 
-## 💾 Persistência de Dados
+## 💾 Banco de Dados
 
-Os dados são salvos localmente no dispositivo usando **AsyncStorage**:
+O app utiliza **SQLite** (expo-sqlite) para persistência de dados:
 
-- ✅ Dados persistem após fechar o app
-- ✅ Funciona offline
-- ✅ Dados ficam no dispositivo até desinstalar o app
-- ✅ Chave de armazenamento: `@ordens_servico`
+- ✅ **Banco de dados relacional** - Estrutura organizada e eficiente
+- ✅ **Dados persistem** após fechar o app
+- ✅ **Funciona offline** - Não requer conexão com internet
+- ✅ **Performance otimizada** - Consultas rápidas e indexadas
+- ✅ **Dados seguros** - Armazenados localmente no dispositivo
+- ✅ **Tabela criada automaticamente** na primeira execução
+
+### Estrutura da Tabela
+
+```sql
+CREATE TABLE ordens_servico (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  data TEXT NOT NULL,
+  nome_cliente TEXT NOT NULL,
+  nome_aparelho TEXT NOT NULL,
+  numero_serie TEXT,
+  motivo_reparo TEXT,
+  servico_realizado TEXT,
+  valor_servico REAL NOT NULL,
+  finalizado INTEGER NOT NULL DEFAULT 0
+);
+```
 
 ## 🔄 Próximos Passos
 
-O app está preparado para integração com banco de dados. Basta substituir o `ordemServicoService.ts` para fazer chamadas à API ou banco de dados de sua escolha.
+O app já utiliza SQLite para persistência local. Para integração com API ou banco de dados remoto, você pode:
+
+1. Criar um serviço de API separado
+2. Manter SQLite como cache local
+3. Sincronizar dados quando houver conexão
 
 ## 📝 Notas
 
