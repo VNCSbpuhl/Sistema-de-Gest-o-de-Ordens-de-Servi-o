@@ -24,16 +24,24 @@ Aplicativo React Native desenvolvido com Expo para cadastro e gerenciamento de O
 ## 📸 Screenshots
 
 ### 1. Tela de Boas-vindas
-![Welcome Screen](docs/screenshots/welcome-screen.png)
+<p>
+  <img src="docs/screenshots/welcome-screen.png" width="450" />
+</p>
 
 ### 2. Tela Principal - Lista de Ordens
-![Home Screen](docs/screenshots/home-screen.png)
+<p>
+  <img src="docs/screenshots/home-screen.png" width="450" />
+</p>
 
 ### 3. Tela de Cadastro/Edição (Parte 1)
-![Cadastro Screen 1](docs/screenshots/cadastro-screen-1.png)
+<p>
+  <img src="docs/screenshots/cadastro-screen-1.png" width="450" />
+</p>
 
 ### 4. Tela de Cadastro/Edição (Parte 2)
-![Cadastro Screen 2](docs/screenshots/cadastro-screen-2.png)
+<p>
+  <img src="docs/screenshots/cadastro-screen-2.png" width="450" />
+</p>
 
 ## 🛠️ Instalação
 
