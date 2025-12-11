@@ -193,3 +193,7 @@ Desenvolvido com ❤️ usando React Native e Expo
 **Versão:** 1.0.0  
 **Expo SDK:** 51.0.0  
 **React Native:** 0.74.5
+
+---
+
+**Trabalho para:** LABORATÓRIO DE DESENVOLVIMENTO DISPOSITIVOS MOVEIS
