@@ -183,11 +183,6 @@ O app está preparado para integração com banco de dados. Basta substituir o `
 ## 📄 Licença
 
 Este projeto está sob a licença MIT.
-
-## 👨‍💻 Autor
-
-Desenvolvido com ❤️ usando React Native e Expo
-
 ---
 
 **Versão:** 1.0.0  
