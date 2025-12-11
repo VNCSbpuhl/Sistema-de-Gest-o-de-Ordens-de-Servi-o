@@ -21,6 +21,20 @@ Aplicativo React Native desenvolvido com Expo para cadastro e gerenciamento de O
 - ✅ **Banco de dados SQLite** - Persistência local robusta e eficiente
 - ✅ **Interface moderna** - Design limpo e profissional
 
+## 📸 Screenshots
+
+### 1. Tela de Boas-vindas
+![Welcome Screen](docs/screenshots/welcome-screen.png)
+
+### 2. Tela Principal - Lista de Ordens
+![Home Screen](docs/screenshots/home-screen.png)
+
+### 3. Tela de Cadastro/Edição (Parte 1)
+![Cadastro Screen 1](docs/screenshots/cadastro-screen-1.png)
+
+### 4. Tela de Cadastro/Edição (Parte 2)
+![Cadastro Screen 2](docs/screenshots/cadastro-screen-2.png)
+
 ## 🛠️ Instalação
 
 ### Pré-requisitos
